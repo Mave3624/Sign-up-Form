@@ -7,6 +7,56 @@
     <title>Sign-up Form</title>
   </head>
 <body>
-
+<main>
+    <section class="one">
+        <div class="left">
+            <div class="logo">
+                <div class="img"><img src="Img/Odin-Logo.png" alt="Odin"></div>
+                <div class="text">ODIN</div>
+            </div>
+        </div>
+        <footer>
+            <a href="https://web.facebook.com/mave363">Photo By <span>MAVE</span></a>
+        </footer>
+    </section>
+    <section class="two">
+        <div class="right">
+            <div class="Intro-text">
+                <p>Welcome to <a href="#">Mave</a> Intermediate HTML and CSS Course first project, under the supvision of <a href="#">The Odin Project</a> Full Stack JavaScript Curriculum. This is a Sign-Up Form project built from scratch by <strong>Maverick</strong></p>
+                <p>Sign-Up Let's Get Started :</p>
+            </div>
+            <div class="Form">
+                <p>Sign-Up</p>
+                <form action="#">
+                    <div class="First-name">
+                        <label for="First-name">First Name :</label>
+                        <input type="text" name="First-name" id="FIrst-name" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="Last-name">
+                        <label for="Last-name">Last Name :</label>
+                        <input type="text" name="Last-name" id="Last-name" required minlength="3" maxlength="20">
+                    </div>
+                    <div class="Email">
+                        <label for="Email">Email :</label>
+                        <input type="email" name="Email" id="Email" required minlength="15" maxlength="30">
+                    </div>
+                    <div class="Number">
+                        <label for="Number">Number :</label>
+                        <input type="text" name="Number" id="Number" minlength="11" maxlength="14" value="+234" inputmode="numeric">
+                    </div>
+                    <div class="Password">
+                        <label for="Password">Password :</label>
+                        <input type="password" name="Password" id="password" required minlength="8" maxlength="16">
+                    </div>
+                    <div class="Confirm">
+                        <label for="Confirm">Confirm Password :</label>
+                        <input type="password" name="Confirm" id="Confirm" required minlength="8" maxlength="16">
+                    </div>
+                </form>
+            </div>
+            <button type="submit">Create Account</button>
+        </div>
+    </section>
+</main>
 </body>
 </html>

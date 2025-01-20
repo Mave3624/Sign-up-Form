@@ -1,0 +1,143 @@
+@font-face {
+    font-family: Main;
+    src: url(Font/Merienda/Merienda-VariableFont_wght.ttf);
+    font-size: normal;
+    font-weight: normal;
+    display: swap;
+}
+@font-face {
+    font-family: Text-font;
+    src: url(Font/Bona_Nova_SC/BonaNovaSC-Regular.ttf);
+    font-size: normal;
+    font-weight: normal;
+    display: swap;
+}
+:root {
+    --Main-Font: Main;
+    --Font-Size: calc(1.4rem + 2.5vw);
+    --Logo-Width: calc(max(7.5vh, 7.5vw));
+    --Logo-Height: calc(max(9.5vh, 9.5vw));
+    --Footer-margin: calc(95vh - calc(20vh + var(--Logo-Height)));
+    --Intro-text: calc(0.7rem + 0.4vw);
+    --two-Margin: calc(10px + min(4vw, 4vh));
+}
+
+* {
+    border: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+}
+
+.one {
+    width: 40vw;
+    min-height: 100vh;
+    background-image: url(Img/bg.png);
+    background-position: bottom 0px left 0px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.two {
+    width: 60vw;
+    min-height: 100vh;
+    background-color: rgb(245, 255, 245);
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20vh;
+    width: 100%;
+    background-color: rgba(10, 4, 4, 0.315);
+}
+
+.text {
+    font-family: var(--Main-Font);
+    font-size: var(--Font-Size);
+    font-weight: 500;
+    color: antiquewhite;
+}
+
+img[alt = "Odin"] {
+    width: var(--Logo-Width);
+    height: var(--Logo-Height);
+}
+
+.one> footer>a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-family: var(--Main-Font);
+    font-size: 0.7rem;
+}
+
+.one> footer {
+    margin-top: var(--Footer-margin);
+    text-align: center;
+}
+
+.right {
+    width: 100%;
+}
+
+.Intro-text>p>a {
+    text-decoration: none;
+    color: rgb(8, 85, 152);
+}
+.Intro-text{
+    max-width: 800px;
+    font-family: Text-font;
+    font-size: var(--Intro-text);
+    margin-left: var(--two-Margin);
+    margin-top: 10px;
+}
+
+.Form {
+    background-color: #fff;
+    margin-top: 15px;
+    box-shadow: 2px  1px 5px 2px rgb(234, 230, 230);
+}
+
+.Form > p {
+    font-family: monospace;
+    font-size: 16px;
+    margin-left: var(--two-Margin);
+    box-sizing: content-box;
+    padding-top: 10px;
+}
+
+input {
+    border: 1px solid black;
+    display: block;
+    font-family: var(--Main-Font),monospace,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 20px;
+    width: clamp(150px, 30vw, 300px);
+    padding-left: 2px;
+}
+form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: var(--two-Margin);
+    gap: 25px;
+    padding: 20px 0;
+    max-width: 750px;
+}
+label {
+    font-family: monospace;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+button {
+    background-color: aquamarine;
+    box-sizing: content-box;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 20px var(--two-Margin);
+}
