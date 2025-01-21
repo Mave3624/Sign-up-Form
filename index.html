@@ -27,34 +27,37 @@
             </div>
             <div class="Form">
                 <p>Sign-Up</p>
-                <form action="#">
+                <form action="#" id="Form">
                     <div class="First-name">
                         <label for="First-name">First Name :</label>
-                        <input type="text" name="First-name" id="FIrst-name" required minlength="3" maxlength="20">
+                        <input type="text" name="First-name" id="FIrst-name" required minlength="3" maxlength="20" pattern="[A-Za-z]+">
                     </div>
                     <div class="Last-name">
                         <label for="Last-name">Last Name :</label>
-                        <input type="text" name="Last-name" id="Last-name" required minlength="3" maxlength="20">
+                        <input type="text" name="Last-name" id="Last-name"  minlength="3" maxlength="20" pattern="[A-Za-z]+">
                     </div>
                     <div class="Email">
                         <label for="Email">Email :</label>
-                        <input type="email" name="Email" id="Email" required minlength="15" maxlength="30">
+                        <input type="email" name="Email" id="Email" required minlength="13" maxlength="30">
                     </div>
                     <div class="Number">
                         <label for="Number">Number :</label>
-                        <input type="text" name="Number" id="Number" minlength="11" maxlength="14" value="+234" inputmode="numeric">
+                        <input type="tel" name="Number" id="Number" minlength="11" maxlength="14" value="+234" pattern="\+234[0-9]{10}" required inputmode="numeric">
                     </div>
                     <div class="Password">
                         <label for="Password">Password :</label>
-                        <input type="password" name="Password" id="password" required minlength="8" maxlength="16">
+                        <input type="password" name="Password" id="password" required minlength="8" maxlength="16" title="Password must Contain 8 characters" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}">
                     </div>
                     <div class="Confirm">
                         <label for="Confirm">Confirm Password :</label>
-                        <input type="password" name="Confirm" id="Confirm" required minlength="8" maxlength="16">
+                        <input type="password" name="Confirm" id="Confirm" required minlength="8" maxlength="16" title="Password must Contain 8 characters" pattern="(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[A-Za-z\d]{8,}">
                     </div>
                 </form>
             </div>
-            <button type="submit">Create Account</button>
+            <button type="submit" form="Form">Create Account</button>
+            <div class="sign-in">
+                <p>Already have an Account? <a href="#">Sign-In</a></p>
+            </div>
         </div>
     </section>
 </main>

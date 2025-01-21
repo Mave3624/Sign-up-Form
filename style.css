@@ -21,7 +21,6 @@
     --Intro-text: calc(0.7rem + 0.4vw);
     --two-Margin: calc(10px + min(4vw, 4vh));
 }
-
 * {
     border: none;
     margin: 0;
@@ -57,26 +56,22 @@ main {
     width: 100%;
     background-color: rgba(10, 4, 4, 0.315);
 }
-
 .text {
     font-family: var(--Main-Font);
     font-size: var(--Font-Size);
     font-weight: 500;
     color: antiquewhite;
 }
-
 img[alt = "Odin"] {
     width: var(--Logo-Width);
     height: var(--Logo-Height);
 }
-
 .one> footer>a {
     text-decoration: none;
     color: rgba(255, 255, 255, 0.5);
     font-family: var(--Main-Font);
     font-size: 0.7rem;
 }
-
 .one> footer {
     margin-top: var(--Footer-margin);
     text-align: center;
@@ -85,11 +80,6 @@ img[alt = "Odin"] {
 .right {
     width: 100%;
 }
-
-.Intro-text>p>a {
-    text-decoration: none;
-    color: rgb(8, 85, 152);
-}
 .Intro-text{
     max-width: 800px;
     font-family: Text-font;
@@ -97,13 +87,16 @@ img[alt = "Odin"] {
     margin-left: var(--two-Margin);
     margin-top: 10px;
 }
+p>a {
+    text-decoration: none;
+    color: rgb(8, 85, 152);
+}
 
 .Form {
     background-color: #fff;
     margin-top: 15px;
-    box-shadow: 2px  1px 5px 2px rgb(234, 230, 230);
+    box-shadow: 3px  4px 5px 1px rgba(164, 164, 164, 0.402);
 }
-
 .Form > p {
     font-family: monospace;
     font-size: 16px;
@@ -111,21 +104,21 @@ img[alt = "Odin"] {
     box-sizing: content-box;
     padding-top: 10px;
 }
-
 input {
     border: 1px solid black;
     display: block;
     font-family: var(--Main-Font),monospace,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    height: 20px;
+    height: 25px;
     width: clamp(150px, 30vw, 300px);
     padding-left: 2px;
+    border-radius: 5px;
 }
 form {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     margin-left: var(--two-Margin);
-    gap: 25px;
+    gap: 20px;
     padding: 20px 0;
     max-width: 750px;
 }
@@ -133,11 +126,56 @@ label {
     font-family: monospace;
     font-size: 0.8rem;
     font-weight: 500;
+    color: rgb(5, 8, 49)
 }
+
 button {
-    background-color: aquamarine;
+    background-color: rgb(2, 126, 85);
     box-sizing: content-box;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 8px 30px;
+    border-radius: 7px;
+    box-shadow: 0.2px 0.5px 5px 0px rgba(176, 175, 175, 0.928);
+    font-family: var(--Main-Font);
+    font-size: 12px;
     margin: 20px var(--two-Margin);
+}
+.sign-in {
+    margin-left: var(--two-Margin);
+    font-family: monospace;
+    color: rgb(5, 8, 49);
+}
+
+input:focus {
+    box-sizing: content-box;
+    border: none;
+    outline: none;
+    box-shadow: 1px 1.5px 2.5px 0px rgb(38, 36, 36);
+    border: 1.5px solid rgb(0, 0, 255);
+}
+input[type = "password"]:focus:invalid {
+    box-sizing: content-box;
+    border: 1.8px solid rgb(255, 0, 0);
+}
+input[type = "password"]:invalid {
+    box-sizing: content-box;
+    border: 1.8px solid rgb(129, 50, 50);
+}
+input {
+    box-sizing: content-box;
+    border: 1.8px solid rgb(0, 0, 0);
+}
+input:focus:valid, 
+ input:valid {
+    border: 1.8px solid green;
+}
+
+input:hover {
+    box-shadow: 1px 1.5px 2.5px 0px rgb(38, 36, 36);
+    box-sizing: content-box;
+}
+button:hover, button:active {
+    box-shadow: 0.5px 1px 1px 0px rgba(1, 61, 1, 0.761);
+}
+a:hover {
+    color: rgb(0, 91, 70)
 }
