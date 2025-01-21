@@ -18,7 +18,7 @@
     --Logo-Width: calc(max(7.5vh, 7.5vw));
     --Logo-Height: calc(max(9.5vh, 9.5vw));
     --Footer-margin: calc(95vh - calc(20vh + var(--Logo-Height)));
-    --Intro-text: calc(0.7rem + 0.4vw);
+    --Intro-text: calc(0.6rem + max(0.5vh, 0.55vw));
     --two-Margin: calc(10px + min(4vw, 4vh));
 }
 * {
@@ -124,7 +124,7 @@ form {
 }
 label {
     font-family: monospace;
-    font-size: 0.8rem;
+    font-size: calc(0.6rem + clamp(min(0.5vh, 0.5vw), max(0.5vh, 0.5vw), 6px));
     font-weight: 500;
     color: rgb(5, 8, 49)
 }
